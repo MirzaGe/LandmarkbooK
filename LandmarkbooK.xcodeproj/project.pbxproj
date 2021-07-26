@@ -13,6 +13,7 @@
 		441B646926AEF4D30078B3BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 441B646726AEF4D30078B3BD /* Main.storyboard */; };
 		441B646B26AEF4D60078B3BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 441B646A26AEF4D60078B3BD /* Assets.xcassets */; };
 		441B646E26AEF4D60078B3BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 441B646C26AEF4D60078B3BD /* LaunchScreen.storyboard */; };
+		441B647726AF29880078B3BD /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441B647626AF29880078B3BD /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		441B646A26AEF4D60078B3BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		441B646D26AEF4D60078B3BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		441B646F26AEF4D60078B3BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		441B647626AF29880078B3BD /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				441B646126AEF4D30078B3BD /* AppDelegate.swift */,
 				441B646326AEF4D30078B3BD /* SceneDelegate.swift */,
 				441B646526AEF4D30078B3BD /* ViewController.swift */,
+				441B647626AF29880078B3BD /* DetailsViewController.swift */,
 				441B646726AEF4D30078B3BD /* Main.storyboard */,
 				441B646A26AEF4D60078B3BD /* Assets.xcassets */,
 				441B646C26AEF4D60078B3BD /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 				441B646626AEF4D30078B3BD /* ViewController.swift in Sources */,
 				441B646226AEF4D30078B3BD /* AppDelegate.swift in Sources */,
 				441B646426AEF4D30078B3BD /* SceneDelegate.swift in Sources */,
+				441B647726AF29880078B3BD /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

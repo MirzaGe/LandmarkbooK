@@ -12,6 +12,25 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var landmarkNames = [String]()
     var landMarkImages = [UIImage]()
     
+    var chosenLandMarkNames = ""
+    var chosenLandMarkImages = UIImage()
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+         chosenLandMarkNames = landmarkNames[indexPath.row]
+         chosenLandMarkImages = landMarkImages[indexPath.row]
+        
+        performSegue(withIdentifier: "ToDetailViewController", sender: nil)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ToDetailViewController" {
+            let destinationVC = segue.destination as! DetailsViewController
+            destinationVC.selectedLandMarkName = chosenLandMarkNames
+            destinationVC.selectedLandMarkImage = chosenLandMarkImages
+        }
+    }
+    
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             landmarkNames.remove(at: indexPath.row)
