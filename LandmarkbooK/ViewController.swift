@@ -12,6 +12,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var landmarkNames = [String]()
     var landMarkImages = [UIImage]()
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            landmarkNames.remove(at: indexPath.row)
+            landMarkImages.remove(at: indexPath.row)
+            tableview.deleteRows(at: [indexPath], with: UITableView.RowAnimation.left)
+        }
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return landmarkNames.count
