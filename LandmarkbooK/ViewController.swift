@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -27,6 +27,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Do any additional setup after loading the view.
         tableview.delegate = self
         tableview.dataSource = self
+        
+        var landmarkNames = [String]()
+        landmarkNames.append("colloseum")
+        landmarkNames.append("wall of china")
+        landmarkNames.append("kremlin")
+        landmarkNames.append("stonehenge")
+        landmarkNames.append("taj mahal")
+        
+        
+        var landMarkImages = [UIImage]()
+        landMarkImages.append(UIImage(named: "colloseum")!)
+        landMarkImages.append(UIImage(named: "wall of china")!)
+        landmarkNames.append(UIImage(named: "kremlin")!)
+        landMarkImages.append(UIImage(named: "staonehenge")!)
+        landMarkImages.append(UIImage(named: "taj mahal")!)
+        
+        
     }
 
 
