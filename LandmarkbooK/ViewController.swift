@@ -45,7 +45,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         landMarkImages.append(UIImage(named: "colosseum")!)
         landMarkImages.append(UIImage(named: "wall of china")!)
         landMarkImages.append(UIImage(named: "kremlin")!)
-        landMarkImages.append(UIImage(named: "staonehenge")!)
+        landMarkImages.append(UIImage(named: "stonehenge")!)
         landMarkImages.append(UIImage(named: "taj mahal")!)
         
         
